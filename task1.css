@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: "Mulish", sans-serif;
+    line-height: 1.7;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+    z-index: 100;
+    position: fixed;
+    width: 87%;
+    padding:1.5rem 7rem;
+
+
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 900;
+
+}
+
+.menu{
+    display: flex;
+    gap: 38px;
+    li.active{
+        border-bottom: 2px solid #fff;
+        padding-bottom: 4px;
+    }
+}
+
+button{
+    border: none;
+    outline: none;
+    color: inherit;
+    background: transparent;
+}
+.contact-btn,.intro-desc button,.intro-form button{
+    background-color: #7971ea;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        background-color: #4f45e3;
+    }
+}
+
+
+#intro{
+    height: 150vh;
+    background: url("https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    position: relative;
+}
+
+
+.overlay{
+    inset: 0;
+    background-color: #343a40;
+    opacity: 0.9;
+    position: absolute;
+   
+}
+.container{
+    width: 75%;
+    height: 100%;
+    max-width: 1140px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 6fr 1fr 5fr;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    
+}
+
+.intro-desc{
+    h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    p{
+        color: rgb(255, 255, 255, 0.5);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    button{
+        color: #fff;
+        padding: 1rem 3rem;
+        font-size: 12px;
+    }
+}
+ 
+.intro-form{
+    grid-column-start: 3;
+    padding: 40px;
+    color: #fff;
+    border-radius: 7px;
+    h2{
+        color: black;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    input{
+        display: block;
+        width: 100%;
+        padding: 0.6rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+    
+        &:focus{
+            border-color: rgb(0, 255, 234);
+        }
+    }
+}
+
